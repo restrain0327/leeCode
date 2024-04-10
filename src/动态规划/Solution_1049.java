@@ -13,7 +13,7 @@ public class Solution_1049 {
             target += k;
         }
         int sum = target;
-         
+
         target = target/2;
 
         //dp
