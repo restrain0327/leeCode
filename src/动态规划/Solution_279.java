@@ -12,7 +12,6 @@ public class Solution_279 {
                 break;
             }
         }
-
         //五部曲
         int[] dp = new int[n+1];
 
@@ -20,7 +19,7 @@ public class Solution_279 {
         Arrays.fill(dp, Integer.MAX_VALUE);
         //背包为0时为0 1为1
         dp[0] = 0;
-    
+
         //完全背包
         for (int i=0; i<num; i++){
             for (int j=i*i; j<=n; j++){
