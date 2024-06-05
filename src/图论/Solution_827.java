@@ -68,15 +68,17 @@ public class Solution_827 {
                         // 哪个岛屿
                         int mark = visited[nextx][nexty];
 
-                        // 已经连过了 或者 没有这个岛屿
+                        // 已经连过了 或者 没有这个岛屿也就是为0 计算面积的时候没有它
                         if (hashSet.contains(mark) || !map.containsKey(mark)){
                             continue;
                         }
 
+                        // 加入
                         hashSet.add(visited[nextx][nexty]);
                         allArea += map.get(visited[nextx][nexty]);
 
                     }
+                    //统计
                     res = Math.max(res, allArea);
                 }
             }
