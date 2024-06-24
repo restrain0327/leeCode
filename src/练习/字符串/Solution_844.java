@@ -46,10 +46,6 @@ public class Solution_844 {
 
         t = stack.toString();
 
-        if (s.equals(t)){
-            return true;
-        }
-
-        return false;
+        return s.equals(t);
     }
 }
